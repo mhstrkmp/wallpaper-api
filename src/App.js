@@ -11,6 +11,13 @@ function App() {
     setRandomImage(randomImageObject);
   }
 
+  function handleClickFavorites() {
+    // randomImage holen
+    // ID von random Image in constante
+    // ID in localStorage packen
+    console.log();
+  }
+
   return (
     <main>
       <button onClick={() => handleClick()}>Get Random Image</button>
@@ -19,6 +26,7 @@ function App() {
           src={randomImage.urls.regular}
           alt={randomImage.alt_description}
           author={randomImage.user.name}
+          clickFavorite={() => handleClickFavorites()}
         />
       )}
     </main>
